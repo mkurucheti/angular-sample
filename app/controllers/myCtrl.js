@@ -6,11 +6,4 @@ app.controller("homeCtrl", function(myService){
     this.clickme = function(){
         alert('ng-click demo!');
     }
-
-   
-    myService.getUsers().then(function(response){
-        vm.gitusers = response.data;
-    })
-   
-
 });

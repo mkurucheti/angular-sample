@@ -15,6 +15,7 @@
     
     <script src="/app/services/myService.js"></script>
     <script src="/app/directives/filterFruits.js"></script>
+    <script src="/app/components/github-users/github-users.component.js"></script>
     
 </head>
 <body ng-app="app" ng-controller="homeCtrl as vm">
@@ -24,21 +25,7 @@
         
        <fruit></fruit>
 
-        <table class="table">
-            <thead>
-                <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="user in vm.gitusers">
-                    <td>{{user.login}}</td>
-                    <td><img src={{user.avatar_url}} class="img-fluid img-thumbnail" style="width:30%; height: 30%"/></td>
-                </tr>
-            </tbody>
-        </table>
+        <github-users></github-users>
         <button name="Click Me!" class="btn btn-primary" ng-click="vm.clickme()">Click Me!</button>
     </div>
 </body>

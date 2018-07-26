@@ -1,0 +1,15 @@
+<table class="table">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="user in vm.gitusers">
+                <td>{{user.login}}</td>
+                <td><img src={{user.avatar_url}} class="img-fluid img-thumbnail" style="width:30%; height: 30%"/></td>
+            </tr>
+        </tbody>
+    </table>
