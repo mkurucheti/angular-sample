@@ -1,7 +1,7 @@
 app.directive('fruit', function(){
     return {
         restrict: 'E',
-        templateUrl: 'directives/filterFruits.html',
+        templateUrl: 'templates/filterFruits.html',
         scope: {},
         controller: 'homeCtrl',
         controllerAs: 'vm',
