@@ -20,10 +20,11 @@
 </head>
 <body ng-app="app" ng-controller="homeCtrl as vm">
     <div class="container">
+        <h3>Angular Model demo!</h3>
         <input type="text" ng-model="vm.message" placeholder="Enter text here">
-        <h1>{{vm.message}}</h1>
+        <h6>{{vm.message}}</h6>
         
-       <fruit></fruit>
+        <fruit></fruit>
 
         <github-users></github-users>
         <button name="Click Me!" class="btn btn-primary" ng-click="vm.clickme()">Click Me!</button>
